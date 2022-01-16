@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="udemy.css" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <button class="accordion">Section 1 : Dive into docker !</button>
+      <div class="panel">
+        <p>1. Finished Code and Diagrams</p>
+      </div>
+      <button class="accordion">
+        Section 2: Manipulating Containers with the Docker Client
+      </button>
+      <div class="panel">
+        <p>1. Finished Code and Diagrams</p>
+      </div>
+      <button class="accordion">
+        Section 3: Building Custom Images Through Docker Server
+      </button>
+      <div class="panel">
+        <p>1. Finished Code and Diagrams</p>
+      </div>
+      <button class="accordion">
+        Section4: Making Real Projects with Docker!
+      </button>
+      <div class="panel">
+        <p>1. Finished Code and Diagrams</p>
+      </div>
+      <button class="accordion">
+        Section 5: Docker Compose with Multiple Local Containers
+      </button>
+      <div class="panel">
+        <p>1. Finished Code and Diagrams</p>
+      </div>
+    </div>
+    <section>
+      <div class="player">
+        <video
+          controls
+          id="myvideo"
+          width="100%"
+          height="100%"
+          src="https://player.vimeo.com/external/551770838.sd.mp4?s=1351165ed743a52827fb5d156d6375180ee5d049&profile_id=165&oauth2_token_id=57447761"
+        ></video
+        ><button id="mybuttonsvideo" onclick="openFullscreen();">
+          Open Video in Fullscreen Mode
+        </button>
+      </div>
+      <div class="content">
+        <span id="buttonCourse" style="cursor: pointer" onclick="openNav()"
+          >Course Details</span
+        >
+        <div class="NavBar">
+          <a><i class="fa fa-search"></i></a>
+          <a id="coursebtn">Course Content</a>
+          <a id="Overviewbtn">Overview</a>
+          <a id="qbtn">Q&A</a>
+          <a id="notesbtn">Notes</a>
+          <a id="anouncebtn">Announcements</a>
+        </div>
+        <section id="qna">
+          <div id="myDIV" class="qnaheader">
+            <h2>Questions And Answers</h2>
+            <input type="text" id="qnamyInput" placeholder="Title..." />
+          </div>
+        </section>
+
+        <section id="over">
+          <h2>About this Course</h2>
+          <h4>
+            Build, test, and deploy Docker applications with Kubernetes while
+            learning production-style development workflows
+          </h4>
+          <table>
+            <tr>
+              <th style="width: 50%">By the numbers</th>
+              <th>Skill level: All Levels</th>
+            </tr>
+            <tr>
+              <td>Certificates</td>
+              <td>Get Udemy certificate by completing entire course</td>
+            </tr>
+            <tr>
+              <td>Features</td>
+              <td>Available on iOS and Android</td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td>
+                If you're tired of spinning your wheels learning how to deploy
+                web applications, this is the course for you. CI+CD Workflows?
+                You will learn it. AWS Deployment? Included. <br /><br />
+                Kubernetes in Production? Of course! This is the ultimate course
+                to learn how to deploy any web application you can possibly
+                dream up. Docker and Kubernetes are the newest tech in the Dev
+                Ops world, and have dramatically changed the flow of creating
+                and deploying web apps.<br /><br />
+                Docker is a technology that allows applications to run in
+                constructs called 'containers', while Kubernetes allows for many
+                different 'containers' to run in coordination. Docker from
+                Scratch! In this course you'll learn Docker from absolute
+                fundamentals, beginning by learning the answer to basic
+                questions such as "What is a container?" and "How does a
+                container work?".<br /><br />
+                From the very first few lectures, we will do a deep dive on the
+                inner workings of containers, so you get a core understanding of
+                exactly how they are implemented. Once you understand what a
+                container is, you'll learn how to work with them using basic
+                Docker CLI commands.<br /><br />
+                After that, you'll apply your new-found mastery of the Docker
+                CLI to build your own custom images, effectively 'Dockerizing'
+                your own personal applications.
+              </td>
+            </tr>
+          </table>
+        </section>
+        <div id="courseDetails">
+          <div></div>
+        </div>
+        <section id="content">
+          <button class="accordion">Section 1 : Dive into docker !</button>
+          <div class="panel">
+            <p>1. Finished Code and Diagrams</p>
+          </div>
+          <button class="accordion">
+            Section 2: Manipulating Containers with the Docker Client
+          </button>
+          <div class="panel">
+            <p>1. Finished Code and Diagrams</p>
+          </div>
+          <button class="accordion">
+            Section 3: Building Custom Images Through Docker Server
+          </button>
+          <div class="panel">
+            <p>1. Finished Code and Diagrams</p>
+          </div>
+          <button class="accordion">
+            Section4: Making Real Projects with Docker!
+          </button>
+          <div class="panel">
+            <p>1. Finished Code and Diagrams</p>
+          </div>
+          <button class="accordion">
+            Section 5: Docker Compose with Multiple Local Containers
+          </button>
+          <div class="panel">
+            <p>1. Finished Code and Diagrams</p>
+          </div>
+        </section>
+        <section id="notes">
+          <div id="myDIV" class="header">
+            <h2>Notes</h2>
+            <input type="text" id="myInput" placeholder="Title..." />
+            <span onclick="addNotes()" class="addBtn">Add</span>
+          </div>
+
+          <ul id="myUL"></ul>
+        </section>
+        <section id="ann">
+          <div class="comment">
+            <div class="righthead">Write a public comment</div>
+            <input type="text" class="commentbox" />
+
+            <div class="commented">
+              <div class="userinfo">
+                <div class="photo"></div>
+                <div class="username">Yash Jain</div>
+                <div class="commentDate">5 Nov 2021</div>
+              </div>
+              <div class="mainArea">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis illo officia ullam! Nihil, tenetur, modi nesciunt
+                voluptates adipisci quam, est odit molestias voluptatum deserunt
+                sit alias odio distinctio officia voluptas!
+              </div>
+              <div class="reply">Reply</div>
+            </div>
+            <div class="commented">
+              <div class="userinfo">
+                <div class="commentDate">5 Nov 2021</div>
+
+                <div class="photo"></div>
+                <div class="username">Yash Jain</div>
+              </div>
+              <div class="mainArea">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis illo officia ullam! Nihil, tenetur, modi nesciunt
+                voluptates adipisci quam, est odit molestias voluptatum deserunt
+                sit alias odio distinctio officia voluptas!
+              </div>
+              <div class="reply">Reply</div>
+            </div>
+            <div class="commented">
+              <div class="userinfo">
+                <div class="commentDate">5 Nov 2021</div>
+
+                <div class="photo"></div>
+                <div class="username">Yash Jain</div>
+              </div>
+              <div class="mainArea">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis illo officia ullam! Nihil, tenetur, modi nesciunt
+                voluptates adipisci quam, est odit molestias voluptatum deserunt
+                sit alias odio distinctio officia voluptas!
+              </div>
+              <div class="reply">Reply</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    var coursebtn = document.getElementById("coursebtn");
+    var Overviewbtn = document.getElementById("Overviewbtn");
+    var notesbtn = document.getElementById("notesbtn");
+    var qbtn = document.getElementById("qbtn");
+    var anouncebtn = document.getElementById("anouncebtn");
+    var content = document.getElementById("content");
+    var over = document.getElementById("over");
+    var qna = document.getElementById("qna");
+    var ann = document.getElementById("ann");
+    var notes = document.getElementById("notes");
+
+    notesbtn.addEventListener("click", function () {
+      content.style.display = "none";
+      over.style.display = "none";
+      qna.style.display = "none";
+      ann.style.display = "none";
+      notes.style.display = "block";
+    });
+    anouncebtn.addEventListener("click", function () {
+      content.style.display = "none";
+      over.style.display = "none";
+      qna.style.display = "none";
+      ann.style.display = "block";
+      notes.style.display = "none";
+    });
+    qbtn.addEventListener("click", function () {
+      content.style.display = "none";
+      over.style.display = "none";
+      qna.style.display = "block";
+      ann.style.display = "none";
+      notes.style.display = "none";
+    });
+    coursebtn.addEventListener("click", function () {
+      content.style.display = "block";
+      over.style.display = "none";
+      qna.style.display = "none";
+      ann.style.display = "none";
+      notes.style.display = "none";
+    });
+    Overviewbtn.addEventListener("click", function () {
+      content.style.display = "none";
+      over.style.display = "block";
+      qna.style.display = "none";
+      ann.style.display = "none";
+      notes.style.display = "none";
+    });
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      myNodelist[i].appendChild(span);
+    }
+
+    // Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
+      };
+    }
+
+    // Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector("ul");
+    list.addEventListener(
+      "click",
+      function (ev) {
+        if (ev.target.tagName === "LI") {
+          ev.target.classList.toggle("checked");
+        }
+      },
+      false
+    );
+
+    // Create a new list item when clicking on the "Add" button
+    function addNotes() {
+      var li = document.createElement("li");
+      var inputValue = document.getElementById("myInput").value;
+      var t = document.createTextNode(inputValue);
+      li.appendChild(t);
+      if (inputValue === "") {
+        alert("You must write something!");
+      } else {
+        document.getElementById("myUL").appendChild(li);
+      }
+      document.getElementById("myInput").value = "";
+
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);
+
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+          var div = this.parentElement;
+          div.style.display = "none";
+        };
+      }
+    }
+
+    function openNav() {
+      coursebtn.style.display = "none";
+      content.style.display = "none";
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginRight = "250px";
+    }
+
+    function closeNav() {
+      coursebtn.style.display = "flex";
+      content.style.display = "block";
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginRight = "0";
+    }
+    var elem = document.getElementById("myvideo");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+  </script>
+</html>
